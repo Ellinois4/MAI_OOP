@@ -30,24 +30,6 @@ Three::Three(uint64_t n) {
   }
 }
 
-Three::Three(const Three& oth) noexcept {
-  number = oth.number;
-}
-
-Three::Three(Three&& oth) noexcept {
-  this->number = std::move(oth.number);
-}
-
-Three& Three::operator=(Three&& oth) noexcept {
-  this->number = std::move(oth.number);
-  return *this;
-}
-
-Three& Three::operator=(Three oth) noexcept {
-  std::swap(this->number, oth.number);
-  return *this;
-}
-
 Three& Three::operator++() noexcept {
   for (size_t i = 0; i < number.get_size(); ++i) {
     if (number[i] != '2') {

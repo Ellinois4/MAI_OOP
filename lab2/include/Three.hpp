@@ -14,11 +14,11 @@ private:
 public:
   Three(uint64_t n);
   Three(const std::string& str);
-  Three(const Three& oth) noexcept;
-  Three(Three&& oth) noexcept;
+  Three(const Three& oth) noexcept = default;
+  Three(Three&& oth) noexcept = default;
 
-  Three& operator=(Three&& oth) noexcept;
-  Three& operator=(Three oth) noexcept;
+  Three& operator=(Three&& oth) noexcept = default;
+  Three& operator=(const Three& oth) noexcept = default; //Question
 
   Three operator+(const Three& oth) const noexcept;
   Three operator-(const Three& oth) const;

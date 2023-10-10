@@ -20,7 +20,7 @@ public:
   Vector(Vector&&) noexcept;
   Vector& operator=(const Vector<T>&);
   Vector& operator=(Vector&&) noexcept;
-  ~Vector();
+  virtual ~Vector();
 
   size_t get_size() const;
   size_t get_capacity() const;
