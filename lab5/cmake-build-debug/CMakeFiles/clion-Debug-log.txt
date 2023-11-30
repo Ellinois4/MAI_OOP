@@ -1,0 +1,32 @@
+/snap/clion/250/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/250/bin/ninja/linux/x64/ninja -G Ninja -S /home/b_eli/Desktop/MAI_OOP/lab5 -B /home/b_eli/Desktop/MAI_OOP/lab5/cmake-build-debug
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/b_eli/Desktop/MAI_OOP/lab5/cmake-build-debug/test/googletest-download
+[1/8] Performing download step (git clone) for 'googletest'
+Cloning into 'googletest-src'...
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+[2/8] Performing update step for 'googletest'
+[3/8] No patch step for 'googletest'
+[4/8] No configure step for 'googletest'
+[5/8] No build step for 'googletest'
+[6/8] No install step for 'googletest'
+[7/8] No test step for 'googletest'
+[8/8] Completed 'googletest'
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done (28.8s)
+CMake Error at test/CMakeLists.txt:37 (add_dependencies):
+  The dependency target "lab5_lib" of target "lab5_test_queue" does not
+  exist.
+
+
+CMake Error at test/CMakeLists.txt:52 (add_dependencies):
+  The dependency target "lab5_lib" of target "lab5_test_allocator" does not
+  exist.
+
+
+-- Generating done (0.0s)
+CMake Generate step failed.  Build files cannot be regenerated correctly.
