@@ -22,4 +22,7 @@ int main() {
     }
 
     std::cout << area << std::endl;
+    delete t0;
+    delete t1;
+    delete s0;
 }

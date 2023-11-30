@@ -33,5 +33,6 @@
 
 
 .vscode
-*build
+*build*
 tasks.json
+.idea
