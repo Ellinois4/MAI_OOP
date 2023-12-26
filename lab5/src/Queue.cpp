@@ -259,7 +259,7 @@ typename Queue<T, Allocator>::Iterator Queue<T, Allocator>::Iterator::operator--
 
 template <typename T, typename Allocator>
 typename Queue<T, Allocator>::Iterator& Queue<T, Allocator>::Iterator::operator=(const Iterator& it) {
-    current_node_ptr = it.current_node_ptr;;
+    current_node_ptr = it.current_node_ptr;
     return *this;
 }
 

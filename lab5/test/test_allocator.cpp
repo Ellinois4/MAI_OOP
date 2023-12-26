@@ -4,7 +4,7 @@
 #include <string>
 
 struct A {
-  ~A() {
+  virtual ~A() {
     std::cout << "DESTROYED";
   }
 };
